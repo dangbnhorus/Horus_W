@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Login - HorusENT</title>
+        <title>OTP - HorusENT</title>
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
     </head>
@@ -19,19 +18,17 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-5">
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                    <div class="card-header"><h1 class="text-center font-weight-light my-4">ĐĂNG NHẬP</h1></div>
+                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Mã xác nhận</h3></div>
                                     <div class="card-body">
-                                        <div class="small mb-3 text-muted">Vui lòng nhập email công ty</div>
-                                        <form action="login.php" method="POST" ROLE="form">
+                                        <div class="small mb-3 text-muted">Vui lòng nhập mã xác thực đã được gửi tới số điện thoại của bạn.</div>
+                                        <form>
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="" type="email" placeholder="Email" name="email" >
-                                                <label for="">Email</label>
-                                                <br>
-                                            <div class="form-floating mb-3">
-                                                <input class="form-control" type="password" id="" placeholder="Mật khẩu" name="password">
-                                                <label for="">Mật khẩu</label>
-                                                <br>
-                                            <center><button type="submit" class="btn btn-primary">Đăng nhập</button></center>
+                                                <input class="form-control" id="inputOTP" type="text" placeholder="..."/>
+                                                <label for="inputEmail">Mã xác nhận</label>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
+                                                <a class="small" href="login.php">Quay lại màn hình đăng nhập</a>
+                                                <a class="btn btn-primary" href="index.php">Đồng ý</a>
                                             </div>
                                         </form>
                                     </div>
@@ -41,6 +38,7 @@
                     </div>
                 </main>
             </div>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
     </body>
